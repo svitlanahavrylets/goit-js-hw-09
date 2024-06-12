@@ -28,7 +28,9 @@ formElement.addEventListener('submit', event => {
   if (email !== '' && message !== '') {
     const formData = { email, message };
     console.log(formData);
+
     formElement.reset();
+
     localStorage.removeItem('feedback-form-state');
   } else {
     alert('Fill please all fields');
